@@ -129,6 +129,8 @@ if (!SpeechRecognition) {
         transcript.innerHTML = text;
 
         console.log("User Said:", text);
+        alert("processCommand is about to run");
+
 processCommand(text);
         /*
             Part 2 will process
