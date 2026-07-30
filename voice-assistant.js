@@ -23,6 +23,20 @@ if (!SpeechRecognition) {
 } else {
 
     const recognition = new SpeechRecognition();
+    function speak(text) {
+
+    window.speechSynthesis.cancel();
+
+    const speech = new SpeechSynthesisUtterance(text);
+
+    speech.lang = "en-US";
+    speech.rate = 1;
+    speech.pitch = 1;
+    speech.volume = 1;
+
+    window.speechSynthesis.speak(speech);
+
+    }
 
     recognition.lang = "en-US";
 
@@ -115,7 +129,7 @@ if (!SpeechRecognition) {
         transcript.innerHTML = text;
 
         console.log("User Said:", text);
-
+processCommand(text);
         /*
             Part 2 will process
             the text here.
