@@ -1,0 +1,141 @@
+document.addEventListener("DOMContentLoaded", function () {
+const voiceBtn = document.getElementById("voiceBtn");
+const voicePanel = document.getElementById("voicePanel");
+const closeVoice = document.getElementById("closeVoice");
+
+const startListening = document.getElementById("startListening");
+const stopListening = document.getElementById("stopListening");
+
+const transcript = document.getElementById("transcript");
+const assistantStatus = document.getElementById("assistantStatus");
+
+const SpeechRecognition =
+window.SpeechRecognition ||
+window.webkitSpeechRecognition;
+
+if (!SpeechRecognition) {
+
+    transcript.innerHTML =
+    "❌ Voice Recognition is not supported in this browser.";
+
+    startListening.disabled = true;
+
+} else {
+
+    const recognition = new SpeechRecognition();
+
+    recognition.lang = "en-US";
+
+    recognition.interimResults = true;
+
+    recognition.continuous = true;
+
+    recognition.maxAlternatives = 1;
+
+/* -------------------------
+       Floating Button
+    -------------------------- */
+
+    voiceBtn.onclick = () => {
+
+        voicePanel.classList.add("show");
+
+    };
+
+    closeVoice.onclick = () => {
+
+        voicePanel.classList.remove("show");
+
+    };
+
+    /* -------------------------
+       Start Listening
+    -------------------------- */
+
+    startListening.onclick = () => {
+
+        recognition.start();
+
+    };
+
+    /* -------------------------
+       Stop Listening
+    -------------------------- */
+
+    stopListening.onclick = () => {
+
+        recognition.stop();
+
+    };
+
+    /* -------------------------
+       Started
+    -------------------------- */
+
+    recognition.onstart = () => {
+
+        assistantStatus.innerHTML =
+        "🎙 Listening...";
+
+        voicePanel.classList.add("listening");
+
+    };
+
+    /* -------------------------
+       Stopped
+    -------------------------- */
+
+    recognition.onend = () => {
+
+        assistantStatus.innerHTML =
+        "Ready";
+
+        voicePanel.classList.remove("listening");
+
+    };
+
+    /* -------------------------
+       Speech Result
+    -------------------------- */
+
+    recognition.onresult = (event) => {
+
+        let text = "";
+
+        for (
+            let i = event.resultIndex;
+            i < event.results.length;
+            i++
+        ) {
+
+            text += event.results[i][0].transcript;
+
+        }
+
+        transcript.innerHTML = text;
+
+        console.log("User Said:", text);
+
+        /*
+            Part 2 will process
+            the text here.
+        */
+
+    };
+
+    /* -------------------------
+       Error
+    -------------------------- */
+
+    recognition.onerror = (event) => {
+
+        assistantStatus.innerHTML =
+        "Error";
+
+        transcript.innerHTML =
+        "⚠ " + event.error;
+
+    };
+
+}
+});
