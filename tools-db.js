@@ -147,7 +147,7 @@
     "id": 12,
     "name": "Merge PDF",
     "category": "PDF",
-    "url": "/tools/merge-pdf.html",
+    "url": "https://skylersage.blogspot.com/p/merge-pdf-online_7.html?m=1",
     "icon": "📚",
     "keywords": [
       "merge pdf",
