@@ -1,4 +1,4 @@
-[
+const TOOLS = [
   {
     "id": 1,
     "name": "Traditional Interest Calculator",
@@ -213,4 +213,6 @@
       "audio extractor"
     ]
   }
-]
+];
+  
+
