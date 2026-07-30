@@ -132,7 +132,9 @@ if (!SpeechRecognition) {
         console.log("User Said:", text);
         alert("processCommand is about to run");
 
-processCommand(text);
+if (event.results[event.results.length - 1].isFinal) {
+    processCommand(text);
+                }
         /*
             Part 2 will process
             the text here.
