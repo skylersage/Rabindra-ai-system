@@ -1,4 +1,4 @@
-alert("voice-assistant.js loaded");
+
 document.addEventListener("DOMContentLoaded", function () {
 const voiceBtn = document.getElementById("voiceBtn");
 const voicePanel = document.getElementById("voicePanel");
