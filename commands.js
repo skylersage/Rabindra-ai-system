@@ -11,23 +11,13 @@ function processCommand(text) {
 
     if (tool) {
 
-        transcript.innerHTML =
-            "✅ Opening " + tool.name;
+        alert("Opening " + tool.name);
 
-        speak("Opening " + tool.name);
-
-        setTimeout(function () {
-
-            window.location.href = tool.url;
-
-        }, 1000);
+        window.location.href = tool.url;
 
     } else {
 
-        transcript.innerHTML =
-            "❌ Sorry, I couldn't find a matching tool.";
-
-        speak("Sorry, I couldn't find a matching tool.");
+        alert("Tool not found");
 
     }
 
