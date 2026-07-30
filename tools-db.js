@@ -147,7 +147,7 @@
     "id": 12,
     "name": "Merge PDF",
     "category": "PDF",
-    "url": "https://skylersage.blogspot.com/p/merge-pdf-online_7.html?m=1",
+    "url": "https://skylersage.blogspot.com/p/merge-pdf-online_7.html?m",
     "icon": "📚",
     "keywords": [
       "merge pdf",
@@ -182,7 +182,7 @@
     "id": 15,
     "name": "Watermark on PDF",
     "category": "PDF",
-    "url": "/tools/watermark-pdf.html",
+    "url": "https://skylersage.blogspot.com/p/add-watermark-to-pdf-easily.html?m",
     "icon": "💧",
     "keywords": [
       "watermark pdf",
