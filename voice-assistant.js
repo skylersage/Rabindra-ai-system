@@ -23,9 +23,15 @@ document.getElementById("voiceSettingsPanel");
 const voiceReplyToggle =
 document.getElementById("voiceReplyToggle");
 
+    const voiceReplyStatus =
+document.getElementById("voiceReplyStatus");
+    
 // Load saved setting
 voiceReplyToggle.checked =
 localStorage.getItem("skylerVoiceReply") === "on";
+
+    voiceReplyStatus.innerHTML =
+voiceReplyToggle.checked ? "ON" : "OFF";
     
 // Global variable
 window.voiceReplyEnabled =
@@ -46,6 +52,7 @@ alert("Mic clicked");
 
 };
 // Save Setting
+
 voiceReplyToggle.onchange = function () {
 
     window.voiceReplyEnabled =
@@ -56,7 +63,11 @@ voiceReplyToggle.onchange = function () {
         this.checked ? "on" : "off"
     );
 
+    voiceReplyStatus.innerHTML =
+    this.checked ? "ON" : "OFF";
+
 };
+    
 const skylerBtn = document.getElementById("skylerBtn");
 const moreSuggestions = document.querySelectorAll(".skylerVoiceMoreSuggestion");
 
