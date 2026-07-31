@@ -2,73 +2,14 @@
    Skyler Commands
    Version: 1.0
 ========================================== */
+
 function processCommand(text) {
 
     text = text.toLowerCase().trim();
 
     const tool = findBestTool(text);
 
-   // Scroll Commands
-
-if (text.includes("scroll down")) {
-
-    window.scrollBy({
-        top: window.innerHeight,
-        behavior: "smooth"
-    });
-
-    if (window.voiceReplyEnabled && window.speak) {
-        window.speak("Scrolling down");
-    }
-
-    return;
-}
-
-
-if (text.includes("scroll up")) {
-
-    window.scrollBy({
-        top: -window.innerHeight,
-        behavior: "smooth"
-    });
-
-    if (window.voiceReplyEnabled && window.speak) {
-        window.speak("Scrolling up");
-    }
-
-    return;
-}
-
-
-if (text.includes("go top") || text.includes("go to top")) {
-
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-
-    if (window.voiceReplyEnabled && window.speak) {
-        window.speak("Going to top");
-    }
-
-    return;
-}
-
-
-if (text.includes("go bottom") || text.includes("go to bottom")) {
-
-    window.scrollTo({
-        top: document.documentElement.scrollHeight,
-        behavior: "smooth"
-    });
-
-    if (window.voiceReplyEnabled && window.speak) {
-        window.speak("Going to bottom");
-    }
-
-    return;
-}
-//scroll command end
+    if (tool) {
 
         if (window.voiceReplyEnabled) {
 
