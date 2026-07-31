@@ -1,4 +1,4 @@
-
+alert("Voice JS loaded");
 document.addEventListener("DOMContentLoaded", function () {
 const voiceBtn = document.getElementById("voiceBtn");
 const voicePanel = document.getElementById("voicePanel");
@@ -32,7 +32,7 @@ window.voiceReplyEnabled =
 voiceReplyToggle.checked;
 
 // Open / Close Settings
-    alert("JS reached here");
+
 voiceSettingsBtn.onclick = function () {
 
     voiceSettingsPanel.classList.toggle("show");
