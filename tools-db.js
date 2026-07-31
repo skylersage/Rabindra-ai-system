@@ -385,8 +385,31 @@ const TOOLS = [
     "geography quiz",
     "country flag"
   ]
-}
+},
   
+  {
+  "id": 30,
+  "name": "Financial Table",
+  "category": "Finance",
+  "url": "https://skylersage.blogspot.com/p/financial-table.html",
+  "icon": "📊",
+  "keywords": [
+    "financial table",
+    "bbs table",
+    "finance table",
+    "pvif table",
+    "pvifa table",
+    "fvif table",
+    "fvifa table",
+    "present value table",
+    "future value table",
+    "discount factor table",
+    "annuity table",
+    "financial factor table",
+    "time value of money table",
+    "tvm table"
+  ]
+    }
 ];
   
 
