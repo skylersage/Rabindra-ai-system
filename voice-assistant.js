@@ -75,17 +75,19 @@ if (!SpeechRecognition) {
 
     voiceBtn.onclick = () => {
 
-        voicePanel.classList.add("show");
-        document.body.style.overflow = "hidden";
-        
+    voicePanel.classList.add("show");
 
-    };
+    document.body.classList.add("skyler-open");
+
+};
 
     closeVoice.onclick = () => {
 
-        voicePanel.classList.remove("show");
-        document.body.style.overflow = "";
-    };
+    voicePanel.classList.remove("show");
+
+    document.body.classList.remove("skyler-open");
+
+};
 
     /* -------------------------
        Start Listening
