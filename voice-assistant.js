@@ -26,7 +26,7 @@ document.getElementById("voiceReplyToggle");
 // Load saved setting
 voiceReplyToggle.checked =
 localStorage.getItem("skylerVoiceReply") === "on";
-
+    
 // Global variable
 window.voiceReplyEnabled =
 voiceReplyToggle.checked;
