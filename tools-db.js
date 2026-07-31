@@ -3,7 +3,7 @@ const TOOLS = [
     "id": 1,
     "name": "Traditional Interest Calculator",
     "category": "Calculator",
-    "url": "/tools/traditional-interest-calculator.html",
+    "url": "https://skylersage.blogspot.com/p/traditional-interest-calculator.html",
     "icon": "🧮",
     "keywords": [
       "traditional interest",
@@ -16,7 +16,7 @@ const TOOLS = [
     "id": 2,
     "name": "Regular Interest Calculator",
     "category": "Calculator",
-    "url": "/tools/regular-interest-calculator.html",
+    "url": "https://skylersage.blogspot.com/p/normal-interest-calculator.html",
     "icon": "🧮",
     "keywords": [
       "regular interest",
@@ -28,7 +28,7 @@ const TOOLS = [
     "id": 3,
     "name": "EMI Calculator",
     "category": "Calculator",
-    "url": "/tools/emi-calculator.html",
+    "url": "https://skylersage.blogspot.com/p/emi-calculator.html",
     "icon": "💰",
     "keywords": [
       "emi",
@@ -42,7 +42,7 @@ const TOOLS = [
     "id": 4,
     "name": "Password Generator",
     "category": "Security",
-    "url": "/tools/password-generator.html",
+    "url": "https://skylersage.blogspot.com/p/create-strong-and-secure-password_6.html",
     "icon": "🔐",
     "keywords": [
       "password",
@@ -55,7 +55,7 @@ const TOOLS = [
     "id": 5,
     "name": "Compress Image",
     "category": "Image",
-    "url": "/tools/compress-image.html",
+    "url": "https://skylersage.blogspot.com/p/compress-your-image-easily.html",
     "icon": "🖼️",
     "keywords": [
       "compress image",
@@ -69,7 +69,7 @@ const TOOLS = [
     "id": 6,
     "name": "Share Exact Location",
     "category": "Utility",
-    "url": "/tools/share-location.html",
+    "url": "https://skylersage.blogspot.com/p/emergency-location-sharing.html",
     "icon": "📍",
     "keywords": [
       "share location",
@@ -82,7 +82,7 @@ const TOOLS = [
     "id": 7,
     "name": "QR Code Generator",
     "category": "QR",
-    "url": "/tools/qr-generator.html",
+    "url": "https://skylersage.blogspot.com/p/generate-your-own-qr-code.html",
     "icon": "🔳",
     "keywords": [
       "qr",
@@ -95,7 +95,7 @@ const TOOLS = [
     "id": 8,
     "name": "Scan QR Code",
     "category": "QR",
-    "url": "/tools/scan-qr.html",
+    "url": "https://skylersage.blogspot.com/p/scan-qr-code-without-installing-third.html",
     "icon": "📷",
     "keywords": [
       "scan qr",
@@ -107,7 +107,7 @@ const TOOLS = [
     "id": 9,
     "name": "Practice Typing",
     "category": "Education",
-    "url": "/tools/practice-typing.html",
+    "url": "https://skylersage.blogspot.com/p/perfect-preeti-nepali-typing-printing.html?m=1",
     "icon": "⌨️",
     "keywords": [
       "typing",
@@ -120,20 +120,27 @@ const TOOLS = [
     "id": 10,
     "name": "Resume Builder",
     "category": "Document",
-    "url": "/tools/resume-builder.html",
+    "url": "https://skylersage.blogspot.com/p/resume-and-id-card.html",
     "icon": "📄",
     "keywords": [
       "resume",
-      "cv",
-      "resume builder",
-      "create cv"
+"resume builder",
+"cv",
+"curriculum vitae",
+"biodata",
+"bio data",
+"bio-data",
+"create resume",
+"make resume",
+"make cv",
+"create cv"
     ]
   },
   {
     "id": 11,
     "name": "Image Converter",
     "category": "Image",
-    "url": "/tools/image-converter.html",
+    "url": "https://skylersage.blogspot.com/p/image-converter-tool-image-converter.html",
     "icon": "🖼️",
     "keywords": [
       "convert image",
@@ -159,10 +166,11 @@ const TOOLS = [
     "id": 13,
     "name": "Split PDF",
     "category": "PDF",
-    "url": "/tools/split-pdf.html",
+    "url": "https://skylersage.blogspot.com/p/split-pages-easily.html",
     "icon": "✂️",
     "keywords": [
       "split pdf",
+      "cut pdf",
       "separate pdf"
     ]
   },
@@ -170,7 +178,7 @@ const TOOLS = [
     "id": 14,
     "name": "Quick Image Resizer",
     "category": "Image",
-    "url": "/tools/image-resizer.html",
+    "url": "https://skylersage.blogspot.com/p/resize-your-image-easily.html",
     "icon": "📐",
     "keywords": [
       "resize image",
@@ -193,7 +201,7 @@ const TOOLS = [
     "id": 16,
     "name": "Trim Audio",
     "category": "Audio",
-    "url": "/tools/trim-audio.html",
+    "url": "https://skylersage.blogspot.com/p/trim-video-online.html",
     "icon": "🎵",
     "keywords": [
       "trim audio",
@@ -205,7 +213,7 @@ const TOOLS = [
     "id": 17,
     "name": "Extract Audio",
     "category": "Audio",
-    "url": "/tools/extract-audio.html",
+    "url": "https://skylersage.blogspot.com/p/trim-video-online.html",
     "icon": "🎧",
     "keywords": [
       "extract audio",
