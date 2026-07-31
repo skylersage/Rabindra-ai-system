@@ -29,13 +29,18 @@ if (tool) {
 
 } else {
 
-    assistantStatus.innerHTML =
-    "❌ Tool not found";
+    assistantStatus.innerHTML = "🔍 Searching...";
+
+    setTimeout(function () {
+
+        assistantStatus.innerHTML = "❌ Tool not found";
+
+    }, 500);
 
     setTimeout(function () {
 
         assistantStatus.innerHTML = "Ready";
 
-    }, 2500);
+    }, 1800);
 
-           } 
+}
