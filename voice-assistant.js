@@ -33,12 +33,18 @@ voiceReplyToggle.checked;
 
 // Open / Close Settings
 
+/*old code voiceSettingsBtn.onclick = function () {
+
+    voiceSettingsPanel.classList.toggle("show");
+
+};*/
+    // Open / Close Settings
+
 voiceSettingsBtn.onclick = function () {
 
     voiceSettingsPanel.classList.toggle("show");
 
 };
-    
 // Save Setting
 voiceReplyToggle.onchange = function () {
 
