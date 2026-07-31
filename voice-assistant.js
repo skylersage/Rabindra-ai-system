@@ -10,6 +10,46 @@ const stopListening = document.getElementById("stopListening");
 const transcript = document.getElementById("transcript");
 window.assistantStatus =
 document.getElementById("assistantStatus");
+    /* ===========================
+   Voice Settings
+=========================== */
+
+const voiceSettingsBtn =
+document.getElementById("voiceSettingsBtn");
+
+const voiceSettingsPanel =
+document.getElementById("voiceSettingsPanel");
+
+const voiceReplyToggle =
+document.getElementById("voiceReplyToggle");
+
+// Load saved setting
+voiceReplyToggle.checked =
+localStorage.getItem("skylerVoiceReply") === "on";
+
+// Global variable
+window.voiceReplyEnabled =
+voiceReplyToggle.checked;
+
+// Open / Close Settings
+voiceSettingsBtn.onclick = function () {
+
+    voiceSettingsPanel.classList.toggle("show");
+
+};
+
+// Save Setting
+voiceReplyToggle.onchange = function () {
+
+    window.voiceReplyEnabled =
+    this.checked;
+
+    localStorage.setItem(
+        "skylerVoiceReply",
+        this.checked ? "on" : "off"
+    );
+
+};
 const skylerBtn = document.getElementById("skylerBtn");
 const moreSuggestions = document.querySelectorAll(".skylerVoiceMoreSuggestion");
 
