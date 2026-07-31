@@ -242,7 +242,151 @@ const TOOLS = [
     "make zip",
     "archive file"
   ]
-    }
+  },
+  {
+  "id": 19,
+  "name": "Dictionary",
+  "category": "Reference",
+  "url": "https://skylersage.blogspot.com/p/english-dictionary.html",
+  "icon": "📖",
+  "keywords": [
+    "dictionary",
+"Wordbook",
+"Word book",
+    "meaning",
+    "word meaning",
+    "find meaning"
+  ]
+},
+{
+  "id": 20,
+  "name": "Atlas",
+  "category": "Reference",
+  "url": "https://skylersage.blogspot.com/p/countries-data.html",
+  "icon": "🌍",
+  "keywords": [
+    "atlas",
+    "world map",
+"Globe",
+    "map",
+    "location map"
+  ]
+},
+{
+  "id": 21,
+  "name": "Notice",
+  "category": "Information",
+  "url": "https://skylersage.blogspot.com/p/notice.html",
+  "icon": "📢",
+  "keywords": [
+    "notice",
+    "announcement",
+    "latest notice"
+  ]
+},
+{
+  "id": 22,
+  "name": "Contact",
+  "category": "Information",
+  "url": "https://skylersage.blogspot.com/p/contact-us.html",
+  "icon": "📞",
+  "keywords": [
+    "contact",
+    "contact us",
+    "get in touch"
+  ]
+},
+{
+  "id": 23,
+  "name": "About",
+  "category": "Information",
+  "url": "https://skylersage.blogspot.com/p/about.html",
+  "icon": "ℹ️",
+  "keywords": [
+    "about",
+    "about us",
+    "who we are"
+  ]
+},
+{
+  "id": 24,
+  "name": "Home",
+  "category": "Navigation",
+  "url": "https://skylersage.blogspot.com/",
+  "icon": "🏠",
+  "keywords": [
+    "home",
+    "homepage",
+    "main page"
+  ]
+},
+{
+  "id": 25,
+  "name": "Privacy Policy",
+  "category": "Legal",
+  "url": "https://skylersage.blogspot.com/p/privacy-policy-at-skyler-sage.html",
+  "icon": "🔒",
+  "keywords": [
+    "privacy policy",
+    "privacy",
+    "data policy"
+  ]
+},
+{
+  "id": 26,
+  "name": "Disclaimer",
+  "category": "Legal",
+  "url": "https://skylersage.blogspot.com/p/disclaimer.html",
+  "icon": "⚠️",
+  "keywords": [
+    "disclaimer",
+    "disclaimer page"
+  ]
+},
+{
+  "id": 27,
+  "name": "Terms and Conditions",
+  "category": "Legal",
+  "url": "https://skylersage.blogspot.com/p/privacy-policy-last-updated-july-24.html",
+  "icon": "📜",
+  "keywords": [
+    "terms and conditions",
+    "terms",
+    "conditions",
+    "rules"
+  ]
+},
+{
+  "id": 28,
+  "name": "Feedback",
+  "category": "Information",
+  "url": "https://skylersage.blogspot.com/p/feedback_22.html?",
+  "icon": "💬",
+  "keywords": [
+    "feedback",
+    "give feedback",
+    "send feedback",
+    "suggestion",
+"Advice",
+"Rate",
+    "review"
+  ]
+},
+{
+  "id": 29,
+  "name": "Flag Quiz",
+  "category": "Quiz",
+  "url": "https://skylersage.blogspot.com/2025/10/country-special_31.html",
+  "icon": "🌍",
+  "keywords": [
+    "flag quiz",
+    "world quiz",
+    "country quiz",
+    "geography quiz",
+    "country flag"
+  ]
+}
+  
 ];
   
 
