@@ -41,7 +41,7 @@ voiceReplyToggle.checked;
     // Open / Close Settings
 
 voiceSettingsBtn.onclick = function () {
-
+alert("Mic clicked");
     voiceSettingsPanel.classList.toggle("show");
 
 };
