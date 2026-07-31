@@ -125,7 +125,7 @@ window.speak = function(text) {
 
     recognition.interimResults = true;
 
-    recognition.continuous = true;
+    recognition.continuous = false;
 
     recognition.maxAlternatives = 1;
 
