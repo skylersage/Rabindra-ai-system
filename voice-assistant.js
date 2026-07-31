@@ -86,7 +86,8 @@ if (!SpeechRecognition) {
 } else {
 
     const recognition = new SpeechRecognition();
-    function speak(text) {
+
+window.speak = function(text) {
 
     window.speechSynthesis.cancel();
 
@@ -99,7 +100,7 @@ if (!SpeechRecognition) {
 
     window.speechSynthesis.speak(speech);
 
-    }
+};
 
     recognition.lang = "en-US";
 
