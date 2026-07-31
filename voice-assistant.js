@@ -76,13 +76,15 @@ if (!SpeechRecognition) {
     voiceBtn.onclick = () => {
 
         voicePanel.classList.add("show");
+        document.body.style.overflow = "hidden";
+        
 
     };
 
     closeVoice.onclick = () => {
 
         voicePanel.classList.remove("show");
-
+        document.body.style.overflow = "";
     };
 
     /* -------------------------
