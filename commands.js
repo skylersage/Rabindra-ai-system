@@ -2,7 +2,6 @@
    Skyler Commands
    Version: 1.0
 ========================================== */
-
 function processCommand(text) {
 
     text = text.toLowerCase().trim();
@@ -10,6 +9,12 @@ function processCommand(text) {
     const tool = findBestTool(text);
 
     if (tool) {
+
+        if (window.voiceReplyEnabled) {
+
+            window.speak("Opening " + tool.name);
+
+        }
 
         assistantStatus.innerHTML = "🔍 Searching...";
 
@@ -26,6 +31,12 @@ function processCommand(text) {
         }, 1200);
 
     } else {
+
+        if (window.voiceReplyEnabled) {
+
+            window.speak("Sorry, I couldn't find that tool.");
+
+        }
 
         assistantStatus.innerHTML = "🔍 Searching...";
 
