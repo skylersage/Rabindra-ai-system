@@ -7,7 +7,37 @@ function processCommand(text) {
     text = text.toLowerCase().trim();
 
     const tool = findBestTool(text);
+   
+// Scroll Commands
 
+if (text.includes("scroll down")) {
+
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    });
+
+    if (window.voiceReplyEnabled) {
+        window.speak("Scrolling down");
+    }
+
+    return;
+}
+
+
+if (text.includes("scroll up") || text.includes("go top")) {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+    if (window.voiceReplyEnabled) {
+        window.speak("Scrolling up");
+    }
+
+    return;
+}
     if (tool) {
 
         if (window.voiceReplyEnabled) {
