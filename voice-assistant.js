@@ -108,7 +108,8 @@ window.speak = function(text) {
     window.speechSynthesis.speak(speech);
 
 };
-
+// Test
+window.speak("Hello Rabindra, voice reply is working");
     recognition.lang = "en-US";
 
     recognition.interimResults = true;
