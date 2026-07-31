@@ -3,44 +3,40 @@
    Version: 1.0
 ========================================== */
 
-if (tool) {
+function processCommand(text) {
 
-    assistantStatus.innerHTML = "🔍 Searching...";
+    text = text.toLowerCase().trim();
 
-    setTimeout(function () {
+    const tool = findBestTool(text);
 
-        assistantStatus.innerHTML =
-        "✅ Found: " + tool.name;
+    if (tool) {
 
-    }, 300);
+        assistantStatus.innerHTML = "🔍 Searching...";
 
-    setTimeout(function () {
+        setTimeout(function () {
+            assistantStatus.innerHTML = "✅ Found: " + tool.name;
+        }, 300);
 
-        assistantStatus.innerHTML =
-        "🚀 Opening " + tool.name;
+        setTimeout(function () {
+            assistantStatus.innerHTML = "🚀 Opening " + tool.name;
+        }, 700);
 
-    }, 700);
+        setTimeout(function () {
+            window.location.href = tool.url;
+        }, 1200);
 
-    setTimeout(function () {
+    } else {
 
-        window.location.href = tool.url;
+        assistantStatus.innerHTML = "🔍 Searching...";
 
-    }, 1200);
+        setTimeout(function () {
+            assistantStatus.innerHTML = "❌ Tool not found";
+        }, 500);
 
-} else {
+        setTimeout(function () {
+            assistantStatus.innerHTML = "Ready";
+        }, 1800);
 
-    assistantStatus.innerHTML = "🔍 Searching...";
-
-    setTimeout(function () {
-
-        assistantStatus.innerHTML = "❌ Tool not found";
-
-    }, 500);
-
-    setTimeout(function () {
-
-        assistantStatus.innerHTML = "Ready";
-
-    }, 1800);
+    }
 
 }
