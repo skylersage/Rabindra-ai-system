@@ -130,7 +130,7 @@ if (!SpeechRecognition) {
         transcript.innerHTML = text;
 
         console.log("User Said:", text);
-        alert("processCommand is about to run");
+        
 
 if (event.results[event.results.length - 1].isFinal) {
     processCommand(text);
