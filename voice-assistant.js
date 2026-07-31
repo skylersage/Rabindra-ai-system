@@ -114,7 +114,7 @@ if (!SpeechRecognition) {
     -------------------------- */
 
     recognition.onresult = (event) => {
-  alert("onresult fired");
+  
         let text = "";
 
         for (
