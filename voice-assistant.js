@@ -109,7 +109,7 @@ window.speak = function(text) {
 
 };
 // Test
-window.speak("Hello Rabindra, voice reply is working");
+//window.speak("Hello Rabindra, voice reply is working");
     recognition.lang = "en-US";
 
     recognition.interimResults = true;
