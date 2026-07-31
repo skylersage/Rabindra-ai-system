@@ -11,13 +11,13 @@ function processCommand(text) {
 
     if (tool) {
 
-        alert("Opening " + tool.name);
+      
 
         window.location.href = tool.url;
 
     } else {
 
-        alert("Tool not found");
+        
 
     }
 
