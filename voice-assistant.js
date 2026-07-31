@@ -8,7 +8,8 @@ const startListening = document.getElementById("startListening");
 const stopListening = document.getElementById("stopListening");
 
 const transcript = document.getElementById("transcript");
-const assistantStatus = document.getElementById("assistantStatus");
+window.assistantStatus =
+document.getElementById("assistantStatus");
 
 const SpeechRecognition =
 window.SpeechRecognition ||
