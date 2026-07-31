@@ -32,12 +32,18 @@ window.voiceReplyEnabled =
 voiceReplyToggle.checked;
 
 // Open / Close Settings
-/*voiceSettingsBtn.onclick = function () {
+voiceSettingsBtn.onclick = function () {
 
     voiceSettingsPanel.classList.toggle("show");
 
-};*/
+};
+voiceSettingsBtn.onclick = function () {
 
+    alert("Clicked");
+
+    voiceSettingsPanel.classList.toggle("show");
+
+};
 // Save Setting
 voiceReplyToggle.onchange = function () {
 
