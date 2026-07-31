@@ -1,4 +1,4 @@
-alert("Voice JS loaded");
+
 document.addEventListener("DOMContentLoaded", function () {
 const voiceBtn = document.getElementById("voiceBtn");
 const voicePanel = document.getElementById("voicePanel");
@@ -38,11 +38,7 @@ voiceSettingsBtn.onclick = function () {
     voiceSettingsPanel.classList.toggle("show");
 
 };
-
-
-    voiceSettingsPanel.classList.toggle("show");
-
-};
+    
 // Save Setting
 voiceReplyToggle.onchange = function () {
 
