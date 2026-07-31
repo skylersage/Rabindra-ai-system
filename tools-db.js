@@ -8,7 +8,7 @@ const TOOLS = [
     "keywords": [
       "traditional interest",
       "interest calculator",
-      "simple interest",
+      "village interest",
       "calculate interest"
     ]
   },
@@ -21,7 +21,8 @@ const TOOLS = [
     "keywords": [
       "regular interest",
       "interest",
-      "calculate interest"
+      "simple interest",
+      "bank interest"
     ]
   },
   {
@@ -48,6 +49,7 @@ const TOOLS = [
       "password",
       "generate password",
       "strong password",
+      "create password",
       "secure password"
     ]
   },
@@ -61,6 +63,8 @@ const TOOLS = [
       "compress image",
       "reduce image size",
       "image compressor",
+      "decrease image size",
+      "reduce image",
       "optimize image",
       "compress photo"
     ]
@@ -74,6 +78,7 @@ const TOOLS = [
     "keywords": [
       "share location",
       "my location",
+      "emergency location",
       "gps",
       "location"
     ]
@@ -146,6 +151,7 @@ const TOOLS = [
       "convert image",
       "jpg",
       "png",
+      "change image format",
       "webp",
       "image converter"
     ]
@@ -194,6 +200,7 @@ const TOOLS = [
     "icon": "💧",
     "keywords": [
       "watermark pdf",
+      "protect PDF",
       "pdf watermark"
     ]
   },
@@ -220,7 +227,22 @@ const TOOLS = [
       "video to audio",
       "audio extractor"
     ]
-  }
+  },
+  {
+  "id": 18,
+  "name": "ZIP File",
+  "category": "File",
+  "url": "https://skylersage.blogspot.com/p/zip-file.html",
+  "icon": "🗜️",
+  "keywords": [
+    "zip file",
+    "zip",
+    "compress file",
+    "create zip",
+    "make zip",
+    "archive file"
+  ]
+    }
 ];
   
 
