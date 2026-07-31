@@ -12,20 +12,20 @@ if (tool) {
         assistantStatus.innerHTML =
         "✅ Found: " + tool.name;
 
-    }, 700);
+    }, 300);
 
     setTimeout(function () {
 
         assistantStatus.innerHTML =
         "🚀 Opening " + tool.name;
 
-    }, 1400);
+    }, 700);
 
     setTimeout(function () {
 
         window.location.href = tool.url;
 
-    }, 2200);
+    }, 1200);
 
 } else {
 
