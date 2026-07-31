@@ -10,7 +10,28 @@ const stopListening = document.getElementById("stopListening");
 const transcript = document.getElementById("transcript");
 window.assistantStatus =
 document.getElementById("assistantStatus");
+const skylerBtn = document.getElementById("skylerBtn");
+const moreSuggestions = document.querySelectorAll(".skylerVoiceMoreSuggestion");
 
+let suggestionsExpanded = false;
+
+skylerBtn.addEventListener("click", function () {
+
+    suggestionsExpanded = !suggestionsExpanded;
+
+    moreSuggestions.forEach(function (item) {
+
+        item.style.display = suggestionsExpanded
+            ? "list-item"
+            : "none";
+
+    });
+
+    skylerBtn.innerHTML = suggestionsExpanded
+        ? "&#9650; Show Less"
+        : "&#9660; See More";
+
+});
 const SpeechRecognition =
 window.SpeechRecognition ||
 window.webkitSpeechRecognition;
