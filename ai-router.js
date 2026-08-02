@@ -27,7 +27,7 @@ function findBestTool(userText) {
 
         if (score > 0) {
             matchedTools.push({
-                tool: tool,
+                ...tool,
                 score: score
             });
         }
@@ -39,11 +39,13 @@ function findBestTool(userText) {
 
     });
 
-    matchedTools.sort((a, b) => b.score - a.score);
+    matchedTools.sort(function (a, b) {
+        return b.score - a.score;
+    });
 
     return {
         tool: bestTool,
         matches: matchedTools
     };
 
-    }
+}
