@@ -2,25 +2,37 @@
    Skyler Commands
    Version: 1.0
 ========================================== */
-
 function processCommand(text) {
 
     text = text.toLowerCase().trim();
 
-    const tool = findBestTool(text);
+    const result = findBestTool(text);
+    const tool = result.tool;
+    const matches = result.matches;
 
     if (tool) {
 
         if (window.voiceReplyEnabled) {
 
-            window.speak("Opening " + tool.name);
+            if (matches.length > 1) {
+                window.speak("I found multiple tools. Opening " + tool.name + " first.");
+            } else {
+                window.speak("Opening " + tool.name);
+            }
 
         }
 
         assistantStatus.innerHTML = "🔍 Searching...";
 
         setTimeout(function () {
-            assistantStatus.innerHTML = "✅ Found: " + tool.name;
+
+            if (matches.length > 1) {
+                assistantStatus.innerHTML =
+                    "⚠️ Multiple tools found. Opening " + tool.name + " first.";
+            } else {
+                assistantStatus.innerHTML = "✅ Found: " + tool.name;
+            }
+
         }, 300);
 
         setTimeout(function () {
@@ -34,9 +46,7 @@ function processCommand(text) {
     } else {
 
         if (window.voiceReplyEnabled) {
-
             window.speak("Sorry, I couldn't find that tool.");
-
         }
 
         assistantStatus.innerHTML = "🔍 Searching...";
