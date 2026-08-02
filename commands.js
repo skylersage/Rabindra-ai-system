@@ -2,6 +2,7 @@
    Skyler Commands
    Version: 1.0
 ========================================== */
+
 function processCommand(text) {
 
     text = text.toLowerCase().trim();
@@ -15,7 +16,11 @@ function processCommand(text) {
         if (window.voiceReplyEnabled) {
 
             if (matches.length > 1) {
-                window.speak("I found multiple tools. Opening " + tool.name + " first.");
+                window.speak(
+                    "I found " + matches.length +
+                    " tools. I can open only one at a time. Opening " +
+                    tool.name + " first."
+                );
             } else {
                 window.speak("Opening " + tool.name);
             }
@@ -28,15 +33,19 @@ function processCommand(text) {
 
             if (matches.length > 1) {
                 assistantStatus.innerHTML =
-                    "⚠️ Multiple tools found. Opening " + tool.name + " first.";
+                    "⚠️ " + matches.length +
+                    " tools detected. Opening " +
+                    tool.name + " first.";
             } else {
-                assistantStatus.innerHTML = "✅ Found: " + tool.name;
+                assistantStatus.innerHTML =
+                    "✅ Found: " + tool.name;
             }
 
         }, 300);
 
         setTimeout(function () {
-            assistantStatus.innerHTML = "🚀 Opening " + tool.name;
+            assistantStatus.innerHTML =
+                "🚀 Opening " + tool.name;
         }, 700);
 
         setTimeout(function () {
