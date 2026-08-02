@@ -9,6 +9,7 @@ function findBestTool(userText) {
 
     let bestTool = null;
     let highestScore = 0;
+    let matchedTools = [];
 
     TOOLS.forEach(tool => {
 
@@ -19,22 +20,30 @@ function findBestTool(userText) {
             keyword = keyword.toLowerCase();
 
             if (userText.includes(keyword)) {
-
                 score++;
-
             }
 
         });
 
-        if (score > highestScore) {
+        if (score > 0) {
+            matchedTools.push({
+                tool: tool,
+                score: score
+            });
+        }
 
+        if (score > highestScore) {
             highestScore = score;
             bestTool = tool;
-
         }
 
     });
 
-    return bestTool;
+    matchedTools.sort((a, b) => b.score - a.score);
 
-}
+    return {
+        tool: bestTool,
+        matches: matchedTools
+    };
+
+    }
