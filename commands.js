@@ -6,7 +6,29 @@
 function processCommand(text) {
 
     text = text.toLowerCase().trim();
+if (
+    text.includes("install this app") ||
+    text.includes("install app")
+) {
 
+    if (window.voiceReplyEnabled) {
+        window.speak("Opening install prompt.");
+    }
+
+    if (window.deferredPrompt) {
+
+        window.deferredPrompt.prompt();
+
+    } else {
+
+        if (window.voiceReplyEnabled) {
+            window.speak("Installation is not available.");
+        }
+
+    }
+
+    return;
+}
     const result = findBestTool(text);
     const tool = result.tool;
     const matches = result.matches;
