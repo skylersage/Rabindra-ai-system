@@ -90,7 +90,7 @@ const TOOLS = [
     "url": "https://skylersage.blogspot.com/p/generate-your-own-qr-code.html",
     "icon": "🔳",
     "keywords": [
-      "qr",
+      
       "qr code",
       "create qr",
       "generate qr"
