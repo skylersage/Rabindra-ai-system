@@ -1,15 +1,15 @@
 const TOOLS = [
   {
     "id": 1,
-    "name": "Traditional Interest Calculator",
+    "name": "Village Interest Calculator",
     "category": "Calculator",
-    "url": "https://skylersage.blogspot.com/p/traditional-interest-calculator.html",
+    "url": "https://skylersage.blogspot.com/p/village-interest-calculator.html",
     "icon": "🧮",
     "keywords": [
       "traditional interest",
-      "interest calculator",
+      "traditional interest calculator",
       "village interest",
-      "calculate interest"
+      "calculate village interest"
     ]
   },
   {
